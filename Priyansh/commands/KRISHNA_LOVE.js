@@ -23,11 +23,11 @@ const gifs = [
 ];
 
 const messages = [
-                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐒𝐇𝐀𝐀𝐍💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
-                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐒𝐇𝐀𝐀𝐍💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
-                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐒𝐇𝐀𝐀𝐍💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
-                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐒𝐇𝐀𝐀𝐍💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
-                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐒𝐇𝐀𝐀𝐍💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n"
+                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐊𝐑𝐈𝐒𝐇𝐍𝐀💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
+                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐊𝐑𝐈𝐒𝐇𝐍𝐀💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
+                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐊𝐑𝐈𝐒𝐇𝐍𝐀💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
+                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐊𝐑𝐈𝐒𝐇𝐍𝐀💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n",
+                "=𝐎𝐰𝐧𝐞𝐫 ➻  💐𝐊𝐑𝐈𝐒𝐇𝐍𝐀💐\n──────────────────\n\n🩷 🖤 𝐌𝐄𝐑𝐀 𝐁𝐀𝐁𝐘 𝐈 𝐋𝐎𝐕𝐄 𝐘𝐎𝐔 𝐓𝐎𝐎 𝐉𝐀𝐀𝐍𝐔 😘😘\n"
 ];
 
 module.exports.handleEvent = async function({ api, event, client, Users, __GLOBAL }) {
@@ -36,9 +36,11 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
 
                 if (event.body.toLowerCase().startsWith("LOVE YOU") || 
                                 event.body.toLowerCase().startsWith("love you") || 
-                                event.body.toLowerCase().startsWith("Love you") || 
-                                event.body.toLowerCase().startsWith("Love me") || 
-                                event.body.toLowerCase().startsWith("love me")) { 
+                                event.body.toLowerCase().startsWith("Love you") ||
+                                event.body.toLowerCase().startsWith("bot love you") || 
+                                event.body.toLowerCase().startsWith("Bot Love you") ||
+                                event.body.toLowerCase().startsWith("bot i love you") || 
+                                event.body.toLowerCase().startsWith("Bot i love you")) { 
 
                                 // Select random GIF and message
                                 const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
@@ -52,7 +54,7 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
                                                                 attachment: fs.createReadStream(downloadPath)
                                                 };
                                                 api.sendMessage(msg, threadID, messageID);
-                                                api.setMessageReaction("💋", event.messageID, (err) => {}, true);
+                                                api.setMessageReaction("😽", event.messageID, (err) => {}, true);
                                 });
                 }
 }
