@@ -482,7 +482,7 @@ if ((event.body.toLowerCase() == "kamina") || (event.body.toLowerCase() == "Kami
 🍒🩵 [  ${rand}  ] 🌸🥀🍒                                        
 
 
-                      *★᭄𝗢𝘄𝗻𝗲𝗿 ཫ.                  ༄𒁍≛⃝𝐌𝐑.𝐒𝐇𝐘𝐀𝐌 𝐃𝐈𝐖𝐀𝐍𝐈💫🍒💐🩵`
+                      *★᭄𝗢𝘄𝗻𝗲𝗿 ཫ.                  ༄𒁍≛⃝ 𝐃𝐈𝐖𝐀𝐍𝐈💫🍒💐🩵`
   }
   return api.sendMessage(msg, threadID, messageID);
 };
