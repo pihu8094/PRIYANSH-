@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports.config = {
-                name: "good-morning",
+                name: "good-night",
                 version: "1.0.1",
                 hasPermssion: 0,
                 credits: "ARYAN",
@@ -55,7 +55,7 @@ module.exports.handleEvent = async function({ api, event, client, Users, __GLOBA
                                                                 attachment: fs.createReadStream(downloadPath)
                                                 };
                                                 api.sendMessage(msg, threadID, messageID);
-                                                api.setMessageReaction("💫", event.messageID, (err) => {}, true);
+                                                api.setMessageReaction("😴", event.messageID, (err) => {}, true);
                                 });
                 }
 }
